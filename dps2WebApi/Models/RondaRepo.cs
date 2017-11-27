@@ -10,7 +10,12 @@ namespace dps2WebApi.Models
 
         private List<Rondas> _rondas;
 
-        public void InicializaRondas()
+        public RondaRepo()
+        {
+            InicializaRondas();
+        }
+
+        private void InicializaRondas()
         {
             _rondas = RondaOperacoes.GetRondas();
         }
@@ -23,9 +28,9 @@ namespace dps2WebApi.Models
             }
         }
 
-        public void inserir(float longi, float lati, int cpf)
+        public void InserirRondas(float longi, float lati, long cpf)
         {
-            RondaOperacoes.Inserir(longi, lati, cpf);
+            RondaOperacoes.InserirRondas(longi, lati, cpf);
         }
 
     }

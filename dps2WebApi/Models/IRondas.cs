@@ -9,7 +9,7 @@ namespace dps2WebApi.Models
     {
 
         IEnumerable<Rondas> All { get; }
-        void inserir(float longi, float lati, int cpf);
+        void InserirRondas(float longi, float lati, long cpf);
 
     }
 }
