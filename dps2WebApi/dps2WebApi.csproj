@@ -182,6 +182,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Audiotoria.cs" />
+    <Compile Include="Models\Clientes.cs" />
+    <Compile Include="Models\Funcionario.cs" />
+    <Compile Include="Models\IRondas.cs" />
+    <Compile Include="Models\Ocorrencias.cs" />
+    <Compile Include="Models\RondaOperacoes.cs" />
+    <Compile Include="Models\RondaRepo.cs" />
+    <Compile Include="Models\Rondas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -238,7 +246,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
