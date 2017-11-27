@@ -34,5 +34,17 @@ namespace dps2WebApi.Controllers
 
         }
 
+        [HttpGet]
+        public IEnumerable<Ocorrencias> List()
+        {
+            return ocorrenciaOperacoes.ocorrenciasAbertas();
+        }
+
+        //public HttpResponseMessage acionamentoImagem(float longi, float lati, long cpf, byte[] imagem, string historico)
+        //{
+        //    ocorrencia.acionamentoEmergenciaImagem(cpf, lati, longi, imagem, historico);
+        //    return Request.CreateResponse(HttpStatusCode.Created);
+        //}
+
     }
 }

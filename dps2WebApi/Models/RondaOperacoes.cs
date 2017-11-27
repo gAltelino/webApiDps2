@@ -16,16 +16,11 @@ namespace dps2WebApi.Models
             return ConfigurationManager.ConnectionStrings["mysqlDb"].ConnectionString;
         }
 
-
         public static List<Rondas> GetRondas()
         {
-
             List<Rondas> _rondas = new List<Rondas>();
             using (MySql.Data.MySqlClient.MySqlConnection con = new MySql.Data.MySqlClient.MySqlConnection(GetStringDb()))
             {
-
-                Console.Write(con);
-
                 con.Open();
                 using (MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM Rondas", con))
                 {
@@ -64,9 +59,6 @@ namespace dps2WebApi.Models
                     con.Clone();
                 }
             }
-
         }
-
-
     }
 }

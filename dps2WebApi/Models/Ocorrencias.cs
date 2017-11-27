@@ -16,6 +16,8 @@ namespace dps2WebApi.Models
         public float longitude { get; set; }
         public int senha_utilizada { get; set; }
         public string historico { get; set; }
+        public string nomeCliente { get; set; }
+        public byte[] imagem { get; set; }
 
     }
 }
