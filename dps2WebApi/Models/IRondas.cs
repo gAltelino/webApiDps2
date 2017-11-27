@@ -9,9 +9,6 @@ namespace dps2WebApi.Models
     {
 
         IEnumerable<Rondas> All { get; }
-        Rondas porCpf(int cpf);
-        Rondas porHora(DateTime hora);
-        Rondas porLocal(float longi, float lati);
         void inserir(float longi, float lati, int cpf);
 
     }
