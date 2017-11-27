@@ -8,7 +8,7 @@ namespace dps2WebApi.Models
     public class Clientes
     {
 
-        public int cpf { get; set; }
+        public long cpf { get; set; }
         public string nome { get; set; }
         public DateTime nascimento { get; set; }
         public string estado_civil { get; set; }

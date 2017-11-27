@@ -9,8 +9,8 @@ namespace dps2WebApi.Models
     {
 
         public int id { get; set; }
-        public int cpf_funcionario { get; set; }
-        public int cpf_cliente { get; set; }
+        public long cpf_funcionario { get; set; }
+        public long cpf_cliente { get; set; }
         public DateTime datahora { get; set; }
         public float latitude { get; set; }
         public float longitude { get; set; }

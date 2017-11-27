@@ -183,13 +183,18 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RondasController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\OcorrenciasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Audiotoria.cs" />
     <Compile Include="Models\Clientes.cs" />
     <Compile Include="Models\Funcionario.cs" />
+    <Compile Include="Models\IClientes.cs" />
+    <Compile Include="Models\IOcorrencia.cs" />
     <Compile Include="Models\IRondas.cs" />
+    <Compile Include="Models\ocorrenciaOperacoes.cs" />
+    <Compile Include="Models\OcorrenciaRepo.cs" />
     <Compile Include="Models\Ocorrencias.cs" />
     <Compile Include="Models\RondaOperacoes.cs" />
     <Compile Include="Models\RondaRepo.cs" />
